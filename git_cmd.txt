@@ -3,5 +3,7 @@ git init --> to start the git to start in the folder
 git status --> to check the status of the codes(like how many files are in staging, commited, tracked and untracked. it will also show which branch your in
 git checkout -b devlopment --> to moveout/siwch/checkout from mani/master branch to devlopment branch)
 git checkout master --> to move to main/master branch
-git add test.py --> test.py will be added to staging state
-git commit test.py
+git add test.py --> test.py will be added to staging state (cache)
+git restore --staged test.py  now test.py will be removed from staging state and kept in devloper working file and this is show as untracked
+git commit test.py --> now the test.py will be moved to local repo and is tracked which means whater ever the changes you make it will be tracked you can move to pervious version
+
