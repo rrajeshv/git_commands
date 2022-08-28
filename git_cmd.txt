@@ -6,8 +6,12 @@ git checkout master --> to move to main/master branch no need to use -b for exis
 git add test.py --> test.py will be added to staging state (cache)
 git restore --staged test.py  now test.py (used to unstage/untrack the staged file)will be removed from staging state and kept in devloper working file and this is show as untracked
 git commit test.py --> now the test.py will be moved to local repo and is tracked which means whater ever the changes you make it will be tracked you can move to pervious version
+
 git log --> it will show the logs on which date we have commited and what was modified and by whom it was done with an hashcode
 git revert <hashcode> --> it will revert from the hascode which is mentioned.
 git branch --> list all the branch
 git clone --> clone the local or remote repo
+git reflog --> list all commit/push/pull activities with hash code. with hase code you can undo/changes/revert the repo
+git revert <hasecode> --> what ever the hasecode give it will be removed.
+git remote -v --> list the remote repos
 
