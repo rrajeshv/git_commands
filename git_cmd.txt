@@ -2,8 +2,10 @@ git cmd
 git init --> to start the git to start in the folder
 git status --> to check the status of the codes(like how many files are in staging, commited, tracked and untracked. it will also show which branch your in
 git checkout -b devlopment --> to moveout/siwch/checkout from mani/master branch to devlopment branch)
-git checkout master --> to move to main/master branch
+git checkout master --> to move to main/master branch no need to use -b for exisisting branches.
 git add test.py --> test.py will be added to staging state (cache)
-git restore --staged test.py  now test.py will be removed from staging state and kept in devloper working file and this is show as untracked
+git restore --staged test.py  now test.py (used to unstage/untrack the staged file)will be removed from staging state and kept in devloper working file and this is show as untracked
 git commit test.py --> now the test.py will be moved to local repo and is tracked which means whater ever the changes you make it will be tracked you can move to pervious version
-
+git log --> it will show the logs on which date we have commited and what was modified and by whom it was done with an hashcode
+git revert <hashcode> --> it will revert from the hascode which is mentioned.
+git branch --> list all the branch
