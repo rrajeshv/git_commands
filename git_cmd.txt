@@ -9,3 +9,5 @@ git commit test.py --> now the test.py will be moved to local repo and is tracke
 git log --> it will show the logs on which date we have commited and what was modified and by whom it was done with an hashcode
 git revert <hashcode> --> it will revert from the hascode which is mentioned.
 git branch --> list all the branch
+git clone --> clone the local or remote repo
+
