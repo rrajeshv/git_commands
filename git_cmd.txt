@@ -1,23 +1,23 @@
-git cmd
-git init --> to start the git to start in the folder
+git commands
+git init --> git to start in this folder ( git commands will work from this folder)
 git status --> to check the status of the codes(like how many files are in staging, commited, tracked and untracked. it will also show which branch your in
 git checkout -b devlopment --> to moveout/siwch/checkout from mani/master branch to devlopment branch)
-git checkout master --> to move to main/master branch no need to use -b for exisisting branches.
+git checkout master --> to move to main/master branch
 git add test.py --> test.py will be added to staging state (cache)
-git restore --staged test.py or git reset head filename.txt  now test.py or filename.txt (used to unstage/untrack the staged file)will be removed from staging state and kept in devloper working file and this is show as untracked
+git restore --staged test.py  now test.py will be removed from staging state and kept in devloper working file and this is show as untracked
 git commit test.py --> now the test.py will be moved to local repo and is tracked which means whater ever the changes you make it will be tracked you can move to pervious version
 git log --> it will show the logs on which date we have commited and what was modified and by whom it was done with an hashcode
-git revert <hashcode> --> it will revert from the hascode which is mentioned.
+git revert (hashcode>) --> it will revert from the hascode which is mentioned.
+git push -u origin master --> to push the code from local repo to remote repo(need to provide credentails) 
+git remote add origin https://github.com/rrajeshv/maven_demo.gitin the working copy of 'sample1', LF will be replaced by CRLF the next time Git touches it -->
+git stash --> instead of commit you can use git stash to save your changes in working branch and move to another branch
+git stash list --> it will list, how many stash items are saved and you can pick any of them and apply it with command git stash apply@{number}
+git drop --> to delete lastly added stash from the list
+git clear --> to delete all the stash
 git branch --> list all the branch
 git clone --> clone the local or remote repo
 git reflog --> list all logs like commit/push/pull activities with hash code. with hase code you can undo/changes/revert the repo
-git revert <hasecode> --> what ever the hasecode give it will be removed from local repo and also workstation.
 git remote -v --> list the remote repos
 git reset HEAD~ --> you want to destroy commit C and also throw away any uncommitted changes
 git reset --hard HEAD^1 --> delete the last commite and commited files will be deleted permanently 
 git reset --soft HEAD^1 --> undo the last commit and move the file from commite/tracking to staging
-
-
-
-
-testing push command from git_cmd.v2 brach to main branch
